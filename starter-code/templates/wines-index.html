@@ -1,1 +1,19 @@
 Welcome to Wine Index (templates/wines-index.html)
+<div ng-contoller="WinesIndexCtrl">
+	<div>{{hello}}</div>
+	<div ng-repeat = "wine in wines" >
+		<h1>{{wine.name}}</h1>
+		<h5><a href="/wines/{{wine.id}}">{{wine.name}}</a></h5>
+		<li>
+			<ul>{{wine.year}}</ul>
+			<ul>{{wine.date}}</ul>
+			<ul>{{wine.grape}}</ul>
+			<ul>{{wine.country}}</ul>
+			<ul>{{wine.region}}</ul>
+			<ul>{{wine.year}}</ul>
+			<ul>{{wine.price}}</ul>
+			<ul>{{wine.description}}</ul>
+			<ul>{{wine.picture}}</ul>
+		</li>
+	</div>
+</div>
